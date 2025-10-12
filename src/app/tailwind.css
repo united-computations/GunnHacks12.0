@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+    --color-theme: #DD5D5C;
+}
+
+/* 
+    ported from tailwindv3 config into a class...
+    it's only used like twice why was this ever a class
+ */
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
