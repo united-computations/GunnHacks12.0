@@ -80,7 +80,7 @@ export default function Header() {
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
-                            href="https://gunnhacks11.devpost.com/"
+                            href="https://gunnhacks12.devpost.com/"
                             aria-label="Devpost"
                             className="text-blue-500 underline"
                         >

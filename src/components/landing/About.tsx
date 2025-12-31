@@ -33,31 +33,31 @@ export default function About() {
 
 const Beginner = () => {
     return <div className='text-lg'>
-        <p className="mb-4">Make, Build, Create & Learn. Join GunnHaXI, the eleventh iteration of Gunn’s annual hackathon!</p>
+        <p className="mb-4">Make, Build, Create & Learn. Join GunnHacks 12.0, the twelfth iteration of Gunn’s annual hackathon!</p>
 
         <p className="mb-4">
             In a hackathon, participants compete in teams to create a programming project within a given time limit. At the end, projects are then
-            rated by a panel of judges, and the winners get cool swags and prizes! At GunnHaXI, the project can literally be anything, from games to data visualization,
+            rated by a panel of judges, and the winners get cool swags and prizes! At GunnHacks 12.0, the project can literally be anything, from games to data visualization,
             from Discord bots to AI-powered assistants. GunnHacks welcomes all beginner coders with varying coding experiences (or even none!)&#8212;there will be several coding workshops, from basic programming to
             web development and AI, to help you get started. Our experienced staff will also be available to offer technical help and advice.
             All you need to get started is an idea, and what you can do is just limited by your imagination!
         </p>
 
         <p className="mb-4">
-            GunnHaXI is a 24-hour event, which means participants are given a 24-hour time frame to complete your project. (Of course, most participants
+            GunnHacks 12.0 is a 24-hour event, which means participants are given a 24-hour time frame to complete your project. (Of course, most participants
             sleep a little.) At the end, participants will give a quick presentation and their project will be rated in 4 categories: technical difficulty,
             practicality, creativity, and user experience. The best projects in each category, as well as overall, will win prizes. A special prize is also reserved
             for the best beginner teams!
         </p>
 
         <p className="mb-4">
-            GunnHaXI is a great opportunity for beginners to learn and become acquainted with coding. It’s a lot of fun, too, with a host of mini-events
+            GunnHacks 12.0 is a great opportunity for beginners to learn and become acquainted with coding. It’s a lot of fun, too, with a host of mini-events
             throughout the night. So whether you’re a programming veteran or someone who has never touched a line of code before, we invite you to join!
             The registration link is <a href="/register">here</a>. (Only PAUSD students are allowed to participate at this time.)
         </p>
 
         <p className="mb-4">
-            GunnHaXI is dedicated to an inclusive experience for all. All hackers are expected to follow the <a href="/conduct" target="_blank" rel="noopener noreferrer">GunnHacks Code of Conduct</a>.
+            GunnHacks 12.0 is dedicated to an inclusive experience for all. All hackers are expected to follow the <a href="/conduct" target="_blank" rel="noopener noreferrer">GunnHacks Code of Conduct</a>.
         </p>
 
     </div>
@@ -65,7 +65,7 @@ const Beginner = () => {
 
 const Veteran = () => {
     return <div className='text-lg'>
-        <p className="mb-4">Make, Build, Create & Learn. It’s GunnHacks 11.0, the eleventh iteration of Gunn’s annual hackathon!</p>
+        <p className="mb-4">Make, Build, Create & Learn. It’s GunnHacks 12.0, the twelfth iteration of Gunn’s annual hackathon!</p>
 
         <p className="mb-4">
             GunnHacks is a 24-hour high school hackathon hosted by the United Computations club at Gunn High School.
