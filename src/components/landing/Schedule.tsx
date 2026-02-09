@@ -1,33 +1,34 @@
 import { ReactNode } from 'react';
 import Section from '../layout/Section';
+import { END, START } from '@/constants';
 
 export default function Schedule() {
     return (
         <Section title="Schedule" id="schedule">
             <div className="flex flex-wrap gap-8">
-                <ScheduleDay name="January 31 (Saturday)">
-                    {/* <ScheduleItem start="1:30 PM">Doors Open</ScheduleItem>
+                <ScheduleDay name={`${START.toFormat("MMMM d")} (${START.toFormat("EEEE")})`}>
+                    <ScheduleItem start="1:30 PM">Doors Open</ScheduleItem>
                     <ScheduleItem start="2:00 PM" end="2:30 PM">Opening Ceremony</ScheduleItem>
                     <ScheduleItem start="2:30 PM" end="3:00 PM">Team Formation</ScheduleItem>
                     <ScheduleItem start="3:00 PM" bold>Hacking Begins</ScheduleItem>
-                    <ScheduleItem start="3:00 PM" end="4:30 PM">Intro to Code Workshop</ScheduleItem>
-                    <ScheduleItem start="4:45 PM" end="6:15 PM">Basic AI and ML // Web-scraping Workshop</ScheduleItem>
+                    {/* <ScheduleItem start="3:00 PM" end="4:30 PM">Intro to Code Workshop</ScheduleItem>
+                    <ScheduleItem start="4:45 PM" end="6:15 PM">Basic AI and ML // Web-scraping Workshop</ScheduleItem> */}
                     <ScheduleItem start="6:30 PM">Dinner</ScheduleItem>
-                    <ScheduleItem start="7:00 PM" end="7:30 PM">Coding Trivia Kahoot</ScheduleItem>
+                    {/* <ScheduleItem start="7:00 PM" end="7:30 PM">Coding Trivia Kahoot</ScheduleItem>
                     <ScheduleItem start="7:45 PM" end="9:15 PM">Web Development // Discord Bots Workshop</ScheduleItem>
                     <ScheduleItem start="9:30 PM" end="10:00 PM">Cow Drawing Competition</ScheduleItem>
                     <ScheduleItem start="10:00 PM" end="12:00 AM">Movie Night</ScheduleItem> */}
                 </ScheduleDay>
-                <ScheduleDay name="February 1 (Sunday)">
-                    {/* <ScheduleItem start="8:00 AM">Breakfast</ScheduleItem>
-                    <ScheduleItem start="10:00 AM" end="10:30 AM">Programming-themed Skribbl.io</ScheduleItem>
+                <ScheduleDay name={`${END.toFormat("MMMM d")} (${END.toFormat("EEEE")})`}>
+                    <ScheduleItem start="8:00 AM">Breakfast</ScheduleItem>
+                    {/* <ScheduleItem start="10:00 AM" end="10:30 AM">Programming-themed Skribbl.io</ScheduleItem> */}
                     <ScheduleItem start="12:00 PM">Lunch</ScheduleItem>
                     <ScheduleItem start="3:00 PM" bold>Hacking Ends</ScheduleItem>
                     <ScheduleItem start="3:00 PM" end="5:00 PM">Presentations & Demos (Judging)</ScheduleItem>
-                    <ScheduleItem start="4:00 PM" end="4:45 PM">Code Golf</ScheduleItem>
+                    {/* <ScheduleItem start="4:00 PM" end="4:45 PM">Code Golf</ScheduleItem> */}
                     <ScheduleItem start="5:00 PM" end="5:30 PM">Awards & Closing Ceremony</ScheduleItem>
                     <ScheduleItem start="5:30 PM" end="6:00 PM">Awards Distribution</ScheduleItem>
-                    <ScheduleItem start="6:00 PM" end="6:30 PM">Cleanup & Doors Close</ScheduleItem> */}
+                    <ScheduleItem start="6:00 PM" end="6:30 PM">Cleanup & Doors Close</ScheduleItem>
                 </ScheduleDay>
             </div>
         </Section>
