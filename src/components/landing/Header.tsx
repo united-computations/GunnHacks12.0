@@ -69,9 +69,19 @@ export default function Header() {
 
             <div className="mt-10 px-16 py-4 text-2xl font-bold">
                 {time < START ? (
-                    `The hacking period will start in ${START.toRelative()}.`
+                    <div className="flex gap-2">
+                        <p>The hacking period will start in {START.toRelative()}.</p>
+                        <a
+                            href="/register"
+                            className="text-blue-200 underline"
+                        >
+                            Register today.
+                        </a>
+                    </div>
                 ) : time < END ? (
-                    `The hacking period has started and will end in ${END.toRelative()}.`
+                    <>
+                        The hacking period has started and will end in {END.toRelative()}.
+                    </>
                 ) : (
                     <>
                         The hacking period has ended. View the results{" "}
