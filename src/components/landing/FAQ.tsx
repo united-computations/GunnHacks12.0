@@ -1,6 +1,7 @@
 import Section from '../layout/Section';
 import Question from '../layout/Question';
 
+import { START, ITERATION_STRING } from '@/constants';
 
 export default function FAQ() {
     return (
@@ -47,11 +48,11 @@ export default function FAQ() {
                     you want to take a break.
                 </Question>
                 <Question q="Where is GunnHacks?">
-                    GunnHacks 12.0 will be held in-person at the Gunn High School library.
+                    GunnHacks {ITERATION_STRING} will be held in-person at the Gunn High School library.
                 </Question>
                 <Question q="When should I sign up by?">
-                    We will accept registrations up to Thursday 11:59PM before the event (1/30/26). However, if you would like a GunnHacks T-shirt, 
-                    please sign up as soon as possible! 
+                    We will accept registrations up to {START.minus({ days: 2 }).toFormat("EEEE")} 11:59PM before the event ({START.minus({ days: 2 }).toFormat("MM/dd/yyyy")}). However, if you would like a GunnHacks T-shirt,
+                    please sign up as soon as possible!
                     They will be granted on a first-come-first-serve basis based on registration times (with no-shows distributed after the event).
                 </Question>
                 <Question q="What if I have another question?">

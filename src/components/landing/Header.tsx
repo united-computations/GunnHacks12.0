@@ -8,7 +8,7 @@ import { useEffect, useState } from "react"
 import { FaDiscord, FaEnvelope, FaInstagram } from "react-icons/fa6"
 
 import { DateTime } from "luxon"
-import { START, END } from "@/constants"
+import { START, END, ITERATION_STRING } from "@/constants"
 
 const overpass = Overpass({
     weight: ["400", "500", "600", "700"],
@@ -46,9 +46,9 @@ export default function Header() {
 
                 <div className="ml-1 mt-[-.25rem] flex flex-col items-center md:block">
                     <p className="mb-2 text-base mt-16 md:mt-0 md:text-left gradient-text tracking-tight">
-                        Make, Build, Create & Learn. It's GunnHacks 12.0,<br />
+                        Make, Build, Create & Learn. It's GunnHacks {ITERATION_STRING},<br />
                         Gunn's 24-hour high school hackathon!<br />
-                        {START.toFormat("MMMM d")} &ndash; {END.toFormat("MMMM d")}, 2026 | Gunn High School Library.
+                        {START.toFormat("MMMM d")} &ndash; {END.toFormat("MMMM d")}, {START.year} | Gunn High School Library.
                     </p>
 
                     <div className="flex gap-4 text-2xl">
@@ -70,12 +70,12 @@ export default function Header() {
             <div className="mt-10 px-16 py-4 text-2xl font-bold">
                 {time < START ? (
                     <div className="flex gap-2">
-                        <p>The hacking period will start in {START.toRelative()}.</p>
+                        <p>The hacking period will start {START.toRelative()}.</p>
                         <a
                             href="/register"
                             className="text-blue-200 underline"
                         >
-                            Register today.
+                            Register here.
                         </a>
                     </div>
                 ) : time < END ? (

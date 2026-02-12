@@ -2,14 +2,16 @@ import type { Metadata } from "next"
 import { Abel } from "next/font/google"
 import "@/app/tailwind.css"
 
+import { ITERATION_STRING } from "@/constants"
+
 const abel = Abel({
     weight: ["400"],
     subsets: ["latin"]
 })
 
 export const metadata: Metadata = {
-    title: "GunnHacks 12.0",
-    description: "Make, Build, Create & Learn. It's GunnHacks 12.0, Gunn's 24-hour high school hackathon!",
+    title: `GunnHacks ${ITERATION_STRING}`,
+    description: `Make, Build, Create & Learn. It's GunnHacks ${ITERATION_STRING}, Gunn's 24-hour high school hackathon!`
 }
 
 export default ({ children }: Readonly<{ children: React.ReactNode }>) => {
