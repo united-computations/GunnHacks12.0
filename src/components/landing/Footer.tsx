@@ -1,8 +1,9 @@
+import { ITERATION } from '@/constants';
 import Section from '../layout/Section';
 
 
 export default function Footer() {
-    const previousYears = ['11.0', '10.0', '9.0', '8.0', '7.0', '6.0', '5.0', '4.0', '3.0', '2.0', '1.0'];
+    const previousYears = Array.from({ length: ITERATION - 1 }, (_, i) => `${ITERATION - i - 1}.0`)
 
     return (
         <Section red>
