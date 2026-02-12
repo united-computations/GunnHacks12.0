@@ -14,15 +14,17 @@ export default function Sponsors() {
                 with the filename being the sponsor's domain,
                 leaving the extension as is.
                 ex: `$ mv logo.svg public/sponsors/example.com.svg`
+
+                2026.02.11 UPDATE: non-trailing whitespace will be interpreted as a path separator.
+                ex: `mitchellparkteenservices.org thinkfund.png` -> `https://mitchellparkteenservices.org/thinkfund`
             */}
             <div className="pt-8 pb-2 flex flex-wrap gap-x-5 gap-y-2 items-center justify-center">
                 {readdirSync("public/sponsors")
-                    .toSorted()
                     .map(parse)
                     .map(sponsor => (
                         <Sponsor
                             key={sponsor.name}
-                            href={`https://${sponsor.name}`}
+                            href={`https://${sponsor.name.trim().replace(" ", "/")}`}
                             src={`/sponsors/${sponsor.base}`}
                             alt={sponsor.name}
                         />
