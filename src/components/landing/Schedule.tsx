@@ -11,23 +11,22 @@ export default function Schedule() {
                     <ScheduleItem start="2:00 PM" end="2:30 PM">Opening Ceremony</ScheduleItem>
                     <ScheduleItem start="2:30 PM" end="3:00 PM">Team Formation</ScheduleItem>
                     <ScheduleItem start="3:00 PM" bold>Hacking Begins</ScheduleItem>
-                    {/* <ScheduleItem start="3:00 PM" end="4:30 PM">Intro to Code Workshop</ScheduleItem>
-                    <ScheduleItem start="4:45 PM" end="6:15 PM">Basic AI and ML // Web-scraping Workshop</ScheduleItem> */}
+                    <ScheduleItem start="3:00 PM" end="4:30 PM">Intro to Code Workshop</ScheduleItem>
+                    <ScheduleItem start="4:45 PM" end="6:15 PM">Basic AI and ML // Web-scraping Workshop</ScheduleItem>
                     <ScheduleItem start="6:30 PM">Dinner</ScheduleItem>
-                    {/* <ScheduleItem start="7:00 PM" end="7:30 PM">Coding Trivia Kahoot</ScheduleItem>
+                    <ScheduleItem start="7:00 PM" end="7:30 PM">Programming vs Pokémon Kahoot</ScheduleItem>
                     <ScheduleItem start="7:45 PM" end="9:15 PM">Web Development // Discord Bots Workshop</ScheduleItem>
                     <ScheduleItem start="9:30 PM" end="10:00 PM">Cow Drawing Competition</ScheduleItem>
-                    <ScheduleItem start="10:00 PM" end="12:00 AM">Movie Night</ScheduleItem> */}
+                    <ScheduleItem start="10:00 PM" end="12:00 AM">Movie Night</ScheduleItem>
                 </ScheduleDay>
                 <ScheduleDay name={`${END.toFormat("MMMM d")} (${END.toFormat("EEEE")})`}>
                     <ScheduleItem start="8:00 AM">Breakfast</ScheduleItem>
-                    {/* <ScheduleItem start="10:00 AM" end="10:30 AM">Programming-themed Skribbl.io</ScheduleItem> */}
+                    <ScheduleItem start="10:00 AM" end="10:30 AM">Programming-themed Skribbl.io</ScheduleItem>
                     <ScheduleItem start="12:00 PM">Lunch</ScheduleItem>
                     <ScheduleItem start="3:00 PM" bold>Hacking Ends</ScheduleItem>
                     <ScheduleItem start="3:00 PM" end="5:00 PM">Presentations & Demos (Judging)</ScheduleItem>
-                    {/* <ScheduleItem start="4:00 PM" end="4:45 PM">Code Golf</ScheduleItem> */}
-                    <ScheduleItem start="5:00 PM" end="5:30 PM">Awards & Closing Ceremony</ScheduleItem>
-                    <ScheduleItem start="5:30 PM" end="6:00 PM">Awards Distribution</ScheduleItem>
+                    <ScheduleItem start="4:00 PM" end="4:45 PM">Code Golf</ScheduleItem>
+                    <ScheduleItem start="5:00 PM" end="5:30 PM">Closing Ceremony & Awards Distribution</ScheduleItem>
                     <ScheduleItem start="6:00 PM" end="6:30 PM">Cleanup & Doors Close</ScheduleItem>
                 </ScheduleDay>
             </div>
