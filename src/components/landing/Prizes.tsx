@@ -3,54 +3,46 @@ import Section from '../layout/Section';
 
 
 const mainPrizes = [
-    // {
-    //     name: 'Top 3 Prizes',
-    //     value:
-    //         [
-    //             'Echo Dot',
-    //             'Bluetooth Speaker',
-    //             'Wireless Headphones',
-    //         ]
-    // },
+    {
+        name: 'Top 3 Prizes',
+        value:
+            [
+                "Airpods",
+                "Gaming Mouse",
+                "Mechanical Keyboard"
+            ]
+    },
     // {
     //     name: 'Category Awards',
     //     value: [
-    //         'Gaming Mouse',
-    //         'Power Bank',
-    //         'Cube Power Stripe',
-    //         '512GB USB Flash Drive',
+    //         "Speakers",
+    //         "LEGO Nature Set",
+    //         "Hexagon Lamps",
+    //         "String Lights",
     //     ]
     // },
-    /* {
+    {
         name: 'Other Awards',
         value: [
-            'Massive Enter Keys',
-            'Discord Nitro',
-            'Stylus Pens',
-            'LED Desk Lamps'
+            "Mini Projector",
+            "Speakers",
+            "LEGO Nature Set",
+            "Hexagon Lamps",
+            "String Lights",
         ]
     },
-    {
-        name: 'Sponsored Awards',
-        value: [
-            'Free .xyz Domains (For All Participants)',
-            'Desmos Merchandise',
-            'WolframAlpha Pro'
-        ]
-    } */
 ];
 
 const miniEventPrizes = [
-    // {
-    //     name: 'Mini Event Awards',
-    //     value: [
-    //         'Big Enter',
-    //         'Axolotl Plush',
-    //         'Mooshroom Cow',
-    //         'Stress Toy',
-    //         'Cup Keychains'
-    //     ]
-    // }
+    {
+        name: 'Mini Event Awards',
+        value: [
+            "Goose Plushies",
+            "Mushroom Cow Plushies",
+            "Big Enter Key",
+            "Gel Pen Set"
+        ]
+    }
 ];
 
 /* export default function Prizes() {
@@ -67,7 +59,7 @@ export default function Prizes() {
     return (
         <Section red title="Prizes" id="prizes">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                {/* {mainPrizes.map(prize => (
+                {mainPrizes.map(prize => (
                     <div key={prize.name}>
                         <h3 className="text-xl font-bold mb-3">{prize.name}</h3>
                         <ul>
@@ -76,14 +68,14 @@ export default function Prizes() {
                             ))}
                         </ul>
                     </div>
-                ))} */}
+                ))}
 
                 <div>
-                    {/* <h3 className="text-xl font-bold mb-3">Mini Event Awards</h3> */}
+                    <h3 className="text-xl font-bold mb-3">Mini Event Awards</h3>
                     <ul>
-                        {/* {miniEventPrizes[0].value.map(item => (
+                        {miniEventPrizes[0].value.map(item => (
                             <Prize key={item}>{item}</Prize>
-                        ))} */}
+                        ))}
                     </ul>
                 </div>
             </div>
