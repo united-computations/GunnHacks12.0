@@ -11,7 +11,7 @@ export default function Schedule() {
                     <ScheduleItem start="2:00 PM" end="2:30 PM">Opening Ceremony</ScheduleItem>
                     <ScheduleItem start="2:30 PM" end="3:00 PM">Team Formation</ScheduleItem>
                     <ScheduleItem start="3:00 PM" bold>Hacking Begins</ScheduleItem>
-                    <ScheduleItem start="3:00 PM" end="4:30 PM">Intro to Code Workshop</ScheduleItem>
+                    {/* <ScheduleItem start="3:00 PM" end="4:30 PM">Intro to Code Workshop</ScheduleItem> */}
                     <ScheduleItem start="4:45 PM" end="6:15 PM">Basic AI and ML // Web-scraping Workshop</ScheduleItem>
                     <ScheduleItem start="6:30 PM">Dinner</ScheduleItem>
                     <ScheduleItem start="7:00 PM" end="7:30 PM">Programming vs Pokémon Kahoot</ScheduleItem>
